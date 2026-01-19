@@ -464,6 +464,7 @@
 |btwNr|BTWNRDEB|
 |debtorFinancialNumber|FINDEBNR|
 |accountManager|VERKOOPNR|
+|currency|VALCOD|
 |pKey|_PKEY|
 |version|_VERSION|
 
