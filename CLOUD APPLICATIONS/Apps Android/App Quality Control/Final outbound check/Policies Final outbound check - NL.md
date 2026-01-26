@@ -250,7 +250,12 @@ Gebruik daarom de functie **Tabellen opschonen** om deze automatisch te legen:
 Dit voorkomt onnodige groei van de database.
 
 ---
+### `AllowScanningRedistributedBarcodes`
+Maakt het mogelijk om tijdens de Final Outbound Check ook artikelen te scannen die zijn herverdeeld via Factuur wijzigen.  
 
+Bij herverdeling wordt **FromBarcode** gevuld met de oorspronkelijke barcode. Met deze policy accepteert het systeem zowel de nieuwe barcode als de oorspronkelijke barcode (**FromBarcode**), waardoor her-labeling van originele stickers niet nodig is.
+
+---
 ### `ShowWarningIfIncomplete`
 Toont een waarschuwing wanneer de inspectie niet compleet is. Dit kan handig zijn omdat het voorkomt dat een order of proces wordt afgerond zonder dat alle verplichte controles zijn uitgevoerd.  
 

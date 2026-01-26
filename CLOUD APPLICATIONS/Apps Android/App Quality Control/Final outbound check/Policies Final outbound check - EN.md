@@ -245,7 +245,12 @@ Use the **Clean Up Tables** function to automatically clear old records:
 This prevents unnecessary database growth.
 
 ---
+### `AllowScanningRedistributedBarcodes`
+Enables items that have been redistributed via Change Invoice to also be scanned during the Final Outbound Check.  
 
+When redistributing, **FromBarcode** is filled with the original barcode. With this policy, the system accepts both the new barcode and the original barcode (**FromBarcode**), eliminating the need to relabel original stickers.
+
+---
 ### `ShowWarningIfIncomplete`
 Displays a warning when the inspection is not complete.  
 This can be helpful as it prevents an order or process from being completed without all required checks having been performed.
