@@ -77,7 +77,7 @@ Peppol verwacht het XML bestand volgens de type op: EN16931 EU Invoice. Met deze
 
 *cbc:CustomizationIDurn:cen.eu:en16931:2017</cbc:CustomizationID>*  
 *cbc:ProfileIDurn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>* 
-<details><summary><b>Klik hier voor uw voorbeeld afbeelding</b></summary><img src=".efact server/media/CustomizationID.png"></details>
+<details><summary><b>Klik hier voor uw voorbeeld afbeelding</b></summary><img src=".efact server/media/CustomizationID2.png"></details>
 
 Doordat de instelling UBL-endpointId-type op: "*Btw9925, Kvk 0208 of 0088 EAN/GLN* staat, kan in het segment EndpointId de waarde voor de Customer en Supplier afwijkend gevuld en meegestuurd worden. Met andere schemeId's en bijbehorende waardes.  
 
