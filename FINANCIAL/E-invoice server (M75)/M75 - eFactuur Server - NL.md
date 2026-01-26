@@ -77,16 +77,18 @@ Peppol verwacht het XML bestand volgens de type op: EN16931 EU Invoice. Met deze
 
 *cbc:CustomizationIDurn:cen.eu:en16931:2017</cbc:CustomizationID>*  
 *cbc:ProfileIDurn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>* 
-<details><summary><b>Klik hier voor uw voorbeeld afbeelding</b></summary><img src=".efact server/media/XML_Voorbeeld.png"></details>
+<details><summary><b>Klik hier voor uw voorbeeld afbeelding</b></summary><img src=".efact server/media/CustomizationID.png"></details>
 
 Doordat de instelling UBL-endpointId-type op: "*Btw9925, Kvk 0208 of 0088 EAN/GLN* staat, kan in het segment EndpointId de waarde voor de Customer en Supplier afwijkend gevuld en meegestuurd worden. Met andere schemeId's en bijbehorende waardes.  
 
 Standaard is dit 'schemeId' '0088' en waarde 'EAN of GLN'. Dit kan nu afwijkend worden ingesteld met de UBL-endpointId-type.  
 Stel deze voor Peppol in op: *Btw 9925, KvK 0208 of 0088 EAN/GLN*. 
 
-<br>Wat gebeurt er zodra dit is ingesteld?</b>    
+<summary><b>Wat gebeurt er zodra dit is ingesteld?</b></summary>   
 Het BTW nummer van de debiteur wordt meegestuurd in dit segment in de XML; <cbc:EndpointID schemeID="9925">987654321</cbc:EndpointID>.  
 Mocht het BTW nummer leeg zijn, dan gaat het systeem kijken of het KvK nummer van de debiteur gevuld is. Als dit het geval is, dan wordt deze meegestuurd met een ander schemeID="0208".  
-Als het BTW nummer en KVK nummer bij de debiteur is gevuld, dan zal het BTW nummer (met schemeID="9925") als eerst worden gestuurd in het EndpointID. Zodra deze leeg is, dan wordt het KvK nummer gestuurd in schemeID=”0208”. Als beide leeg zijn, dan wordt de GLN van de debiteur gestuurd in schemeID=”0088”.
+Als het BTW nummer en KVK nummer bij de debiteur is gevuld, dan zal het BTW nummer (met schemeID="9925") als eerst worden gestuurd in het EndpointID.  
+Zodra deze leeg is, dan wordt het KvK nummer gestuurd in schemeID=”0208”.  
+Als beide leeg zijn, dan wordt de GLN van de debiteur gestuurd in schemeID=”0088”.
 <details><summary><b>Klik hier voor uw voorbeeld afbeelding waarbij BTW nummer en KVK nummer is gevuld van de debiteur</b></summary><img src=".efact server/media/BTW_en_KVK.png"></details>
 <details><summary><b>Klik hier voor uw voorbeeld afbeelding wat er in de XML wordt meegestuurd</b></summary><img src=".efact server/media/XML_Voorbeeld.png"></details>
