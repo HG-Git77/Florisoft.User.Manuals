@@ -732,6 +732,7 @@
 | TRANS               | TransId              |
 | TRANSLANG           | TransIdLong          |
 | VEILCOD             | AuctionId            |
+| VERSCHEPID          | ShipmentId           |
 | VPARTIJNR           | VParcelId            |
 | ZETELNR             | SeatNo               |
 
