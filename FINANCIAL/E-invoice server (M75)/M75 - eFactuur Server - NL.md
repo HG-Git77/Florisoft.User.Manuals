@@ -71,7 +71,7 @@ De instellingen staan in de constanten bij de debiteur op tabblad Factuur -> Ele
 |:--|:--|
 |**1**|Open het constanten scherm en navigeer naar het pad:<br>**Organen→Debiteur gegevens→Debiteuren**|
 |**2**|Open een debiteur en navigeer binnen de kaart naar de submap:<br>**Factuur→Electronische Factuur**|
-|**3**|Zet de instelling "*Bij Florisoft eFactuur ook UBL-bijlage meesturen.*" aan.  Zet de instelling UBL-bijlagetype op: *EN16931 EU Invoice*" en zet UBL-endpointId-type op: "*Btw9925, Kvk 0208 of 0088 EAN/GLN*".<details><summary><b>Klik hier voor uw voorbeeld afbeelding</b></summary><img src=".efact server/media/UBL_Efactuur.png"></details>
+|**3**|Zet de instelling "*Bij Florisoft eFactuur ook UBL-bijlage meesturen.*" aan.  Zet de instelling UBL-bijlagetype op: *EN16931 EU Invoice*" en zet UBL-endpointId-type op: "*Btw9925, Kvk 0208 of 0088 EAN/GLN*".<details><summary><b>Klik hier voor uw voorbeeld afbeelding</b></summary><img src=".efact server/media/UBLefact.png"></details>
 
 Peppol verwacht het XML bestand volgens de type op: EN16931 EU Invoice. Met deze instellingen wordt dit in de XML meegestuurd: 
 
