@@ -2008,3 +2008,14 @@
 |priceEuro        |PRIJSEURO  |
 |priceFixed       |PRIJSFIXED |
 |version          |_VERSION   |
+
+## PackageCosts (FustKost)
+
+|API                    |DATABASE   |
+|:--                    |:--        |
+|packageId              |FUSTCOD    |
+|priceParcelPurchase2   |INKPRIJS2  |
+|s1                     |S1         |
+|s2                     |S2         |
+|s3                     |S3         |
+|version                |_VERSION   |
