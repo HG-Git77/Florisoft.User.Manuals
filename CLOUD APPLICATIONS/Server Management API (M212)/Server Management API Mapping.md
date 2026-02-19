@@ -2014,7 +2014,8 @@
 |API                    |DATABASE   |
 |:--                    |:--        |
 |packageId              |FUSTCOD    |
-|priceParcelPurchase2   |INKPRIJS2  |
+|pricePurchase2         |INKPRIJS2  |
+|contentColli           |INHKOLLI   |
 |s1                     |S1         |
 |s2                     |S2         |
 |s3                     |S3         |
