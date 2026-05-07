@@ -6,7 +6,7 @@
 
 Deze handleiding beschrijft het gebruik van de Stock Counting-functionaliteit in de Florisoft Inventory App. De workflow van de app is geconfigureerd op basis van de relevante policies.
 
-> ℹ️ De uitgebreide handleiding voor het instellen van deze policies is beschikbaar via de volgende link: [Policies Stock Counting NL](https://github.com/florisoft/User.Manuals/blob/main/CLOUD%20APPLICATIONS/Inventory%20App/Stock%20Counting/Policies%20Stock%20Counting%20NL.md)
+> ℹ️ De uitgebreide handleiding voor het instellen van deze policies is beschikbaar via de volgende link: [Policies Stock Counting NL](https://github.com/florisoft/User.Manuals/blob/main/CLOUD%20APPLICATIONS/Apps%20Android/App%20Inventory/Stock%20Counting/Policies%20Stock%20Counting%20NL.md)
 
 **Benodigdheden:**
 
@@ -63,15 +63,24 @@ of zoeken op:
 
 Alleen partijen binnen geconfigureerde voorraden worden getoond.
 
+De verwerking hangt af van de policy `Apps_Inventory_StockCounting_StockCountingStrategy`:
+
+- Met `Standaard telling op partijbasis` wordt de geselecteerde partij als afzonderlijke partij geteld.
+- Met `Telling op v-partij basis` blijft zoeken en scannen op partijniveau werken, maar wordt de selectie intern vertaald naar het bijbehorende VPartijNr. Partijen met hetzelfde VPartijNr binnen de geconfigureerde voorraden worden daarna als een geconsolideerde telling verwerkt.
+
 ### Stap 5: Selecteer een partij
 
 Klik op **Select stock item** om het detail van de partij te openen. Als u de partij via scannen heeft geselecteerd, wordt dit scherm automatisch geopend.
+
+Bij `Telling op v-partij basis` kan het detailscherm meerdere administratieve partijen onder hetzelfde VPartijNr als een geconsolideerd resultaat openen.
 
 <details><summary><b>Klik hier voor uw voorbeeld!</b></summary><img src="Media/Doorloop/6.png"></details>
 
 ### Stap 6: Controleer en pas waarden aan
 
 Pas in het Stockitem-detailscherm de voorraadwaarden aan waar nodig. Als een partij al eerder is gecontroleerd, herkent u dit aan een oranje banner boven in het scherm. Wanneer er nog pickorders openstaan op de partij, wordt dit ook weergegeven in het scherm. Houd er rekening mee dat het weergegeven totaal inclusief het aantal is dat nog gepickt moet worden.
+
+Bij `Telling op v-partij basis` worden aantalswijzigingen, detailwijzigingen en controle-vinkjes toegepast op de onderliggende partijen binnen de ingestelde voorraad-policy. De sortering van de policy bepaalt de verwerkingsvolgorde.
 
 <details><summary><b>Klik hier voor uw voorbeeld!</b></summary><img src="Media/Doorloop/7.png"></details>
 
@@ -92,6 +101,8 @@ In dit scherm kunt u:
 
 De opgegeven opmerking wordt opgeslagen in het memo-veld van de verdeling, zodat deze later traceerbaar is in de backoffice.
 
+Bij `Telling op v-partij basis` wordt de kwaliteitsregistratie verwerkt op de onderliggende partijen volgens de volgorde van de voorraad-policy.
+
 <details><summary><b>Klik hier voor uw voorbeeld!</b></summary><img src="Media/Doorloop/15.png"></details>
 
 
@@ -100,6 +111,8 @@ De opgegeven opmerking wordt opgeslagen in het memo-veld van de verdeling, zodat
 In het detailscherm kunt u voorraad- of prijsstickers printen. De beschikbare lay-outs en printers zijn vooraf ingesteld.
 
 Klik op het printsjabloon, geef het gewenste aantal labels op en klik op **Print**. U kunt zowel voorraad labels als prijssticker labels selecteren, afhankelijk van het gekozen sjabloon.
+
+Bij `Telling op v-partij basis` wordt geprint op basis van de eerste onderliggende partij volgens de volgorde van de voorraad-policy.
 
 <details><summary><b>Klik hier voor uw voorbeeld!</b></summary><img src="Media/Doorloop/8.png"></details>
 

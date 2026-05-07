@@ -6,7 +6,7 @@
 
 This manual describes the use of the stock counting functionality in the Florisoft Inventory App. The app's workflow is configured based on the applicable policies.
 
-> ℹ️ The full policy configuration manual is available via the following link: [Policies stock counting EN](https://github.com/florisoft/User.Manuals/blob/main/CLOUD%20APPLICATIONS/Inventory%20App/Stock%20Counting/Policies%20Stock%20Counting%20EN.md)
+> ℹ️ The full policy configuration manual is available via the following link: [Policies stock counting EN](https://github.com/florisoft/User.Manuals/blob/main/CLOUD%20APPLICATIONS/Apps%20Android/App%20Inventory/Stock%20Counting/Policies%20Stock%20Counting%20EN.md)
 
 **Requirements:**
 
@@ -58,15 +58,24 @@ or search by:
 
 Only parcels in configured stock locations will be shown.
 
+Processing depends on the `Apps_Inventory_StockCounting_StockCountingStrategy` policy:
+
+- With `Default stockcounting based`, the selected parcel is counted as an individual parcel.
+- With `stockcounting based on v-stock items`, searching and scanning still work at parcel level, but the selected parcel is internally translated to the related VPartijNr. Parcels with the same VPartijNr within the configured stock locations are then processed as one consolidated count.
+
 ### Step 5: Select a Parcel
 
 Click **Select stock item** to open the parcel detail. If the parcel was selected via scanning, this screen will open automatically.
+
+With `stockcounting based on v-stock items`, the detail screen can open multiple administrative parcels under the same VPartijNr as one consolidated result.
 
 <details><summary><b>Click here for an example!</b></summary><img src="Media/Doorloop/6.png"></details>
 
 ### Step 6: Review and Adjust Values
 
 Adjust the stock values as needed in the stock item detail screen. If a parcel was previously inspected, an orange banner will appear at the top of the screen. If there are open pick orders for the parcel, this will also be indicated. Note that the displayed total includes quantities still to be picked.
+
+With `stockcounting based on v-stock items`, quantity changes, detail changes, and check marks are applied to the underlying parcels within the configured stock policy. The policy sorting determines the processing order.
 
 <details><summary><b>Click here for an example!</b></summary><img src="Media/Doorloop/7.png"></details>
 
@@ -87,6 +96,8 @@ In this screen, you can:
 
 The comment you enter will be saved in the memo field of the distribution, so that it can be traced later in the back office.
 
+With `stockcounting based on v-stock items`, the quality issue registration is processed on the underlying parcels according to the stock policy order.
+
 <details><summary><b>Click here for an example!</b></summary><img src="Media/Doorloop/15.png"></details>
 
 ### Print Labels
@@ -94,6 +105,8 @@ The comment you enter will be saved in the memo field of the distribution, so th
 In this screen, you can print stock or price labels. The available layouts and printers are preconfigured.
 
 Click the print template, enter the desired quantity, and click **Print**. You can choose between stock labels or price labels depending on the selected template.
+
+With `stockcounting based on v-stock items`, printing is based on the first underlying parcel according to the stock policy order.
 
 <details><summary><b>Click here for an example!</b></summary><img src="Media/Doorloop/8.png"></details>
 

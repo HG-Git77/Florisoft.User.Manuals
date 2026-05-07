@@ -248,6 +248,20 @@ Determines which stocks are used to adjust the pick-check status of parcels.
 
 By default this setting is empty, meaning no specific stocks are defined.
 
+---
+
+### `StockCountingStrategy`
+
+The `Apps_Inventory_StockCounting_StockCountingStrategy` policy determines whether Stock Counting counts individual parcels or consolidates processing at VPartijNr level.
+
+**Available options:**
+
+- `Default stockcounting based`: each selected parcel is counted and processed separately.
+- `stockcounting based on v-stock items`: searching and scanning continue to work at parcel level, but after selection the app internally translates the parcel to the related VPartijNr. Parcels with the same VPartijNr are shown in the mutation screen as one consolidated result.
+
+With `stockcounting based on v-stock items`, only parcels within the configured stock policy/`AvailableStocks` are included. The sorting of that policy determines the processing order. Quantity increases or decreases are distributed across the underlying parcels according to that order. Detail changes, check marks, and quality issues are applied to the underlying parcels within the policy. Printing is based on the first underlying parcel according to the policy order.
+
+---
 
 ## Authorizations
 

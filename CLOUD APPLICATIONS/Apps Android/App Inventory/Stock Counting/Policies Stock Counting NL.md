@@ -248,6 +248,21 @@ Bepaalt welke voorraden worden gebruikt om de pick-checkstatus van partijen te k
 
 Standaard is deze instelling leeg, wat betekent dat er geen specifieke voorraden zijn opgegeven.
 
+---
+
+### `StockCountingStrategy`
+
+De policy `Apps_Inventory_StockCounting_StockCountingStrategy` bepaalt of Stock Counting per afzonderlijke partij telt of op VPartijNr-niveau consolideert.
+
+**Beschikbare opties:**
+
+- `Standaard telling op partijbasis`: iedere geselecteerde partij wordt afzonderlijk geteld en verwerkt.
+- `Telling op v-partij basis`: zoeken en scannen blijven op partijniveau werken, maar na selectie vertaalt de app de partij intern naar het bijbehorende VPartijNr. Partijen met hetzelfde VPartijNr worden in het mutatiescherm als een geconsolideerd resultaat verwerkt.
+
+Bij `Telling op v-partij basis` tellen alleen partijen mee die binnen de ingestelde voorraad-policy/`AvailableStocks` vallen. De sortering van die policy bepaalt de verwerkingsvolgorde. Aantal verhogen of verlagen wordt volgens die volgorde verdeeld over de onderliggende partijen. Detailwijzigingen, controle-vinkjes en kwaliteitsissues worden toegepast op de onderliggende partijen binnen de policy. Printen gebeurt op basis van de eerste onderliggende partij volgens de policy-volgorde.
+
+---
+
 ## Autorisaties
 
 Voor toegang tot de Stock Counting-functionaliteit zijn specifieke autorisaties vereist.\
