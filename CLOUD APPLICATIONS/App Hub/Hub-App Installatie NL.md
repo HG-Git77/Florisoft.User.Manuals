@@ -1,79 +1,275 @@
-![Florisoft logo](https://raw.githubusercontent.com/florisoft/User.Manuals/main/fslogo.png)
-# Florisoft Hub-App Installatie
-Dit document beschrijft de installatie en initiele opzet van de Hub-App van Florisoft. In dit document leest u over het downloaden en installeren van de applicatie, en hoe de app zal gaan werken in combinatie met de andere beschikbare apps.
+<img src="../../fslogo.png">
 
-## Inhoudsopgave
-<br>[Android app downloaden](#android-app-downloaden)</br>
-<br>[Android app installeren](#android-app-installeren)</br>
-<br>[Windows app downloaden](#windows-app-downloaden)</br>
-<br>[Windows app installeren](#windows-app-installeren)</br>
+# Florisoft Hub-app installatiehandleiding
 
+Deze handleiding helpt u bij het downloaden, installeren en instellen van de Florisoft Hub-app. Via de Hub-app kunt u andere Florisoft apps downloaden, openen, verwijderen en later bijwerken.
+
+## Inhoud
+
+- [Android app downloaden](#android-app-downloaden)
+- [Android app installeren](#android-app-installeren)
+- [Windows app downloaden](#windows-app-downloaden)
+- [Windows app installeren](#windows-app-installeren)
+- [Veelvoorkomende vragen](#veelvoorkomende-vragen)
+
+## Voor u begint
+
+Zorg dat u de volgende gegevens bij de hand heeft:
+
+- De Cloud-server-URL van uw Florisoft omgeving.
+- Een Florisoft gebruiker waarmee u mag inloggen.
+- Een internetverbinding op het apparaat waarop u de Hub-app installeert.
+
+Kies de versie die past bij het apparaat waarop u Florisoft apps wilt gebruiken. De beschikbare apps kunnen verschillen tussen Android en Windows.
 
 ## Android app downloaden
+
 Voor Android-apparaten kunt u de onderstaande QR-code scannen.
 
 <img src="Media/Installatie Hub-App/image1.png" width="500" height="500">
 
-*Lukt scannen niet? Gebruik dan deze Android-link in een internetbrowser: https://app.florisoft.nl/apps/latest/hub/android/com.florisoft.hub-signed.apk*
+Lukt scannen niet? Open dan deze link in een internetbrowser op het Android-apparaat:
 
-### Trusted variant (alleen op verzoek)
-
-:warning: De Trusted variant is alleen bedoeld voor specifieke klanten. Gebruik deze versie alleen wanneer Florisoft dit expliciet aan u heeft doorgegeven. Twijfelt u? Gebruik dan de standaard Android-download hierboven.
-
-<details>
-<summary>Trusted APK tonen</summary>
-
-<img src="Media/Installatie Hub-App/QR Code Trusted.png" width="500" height="500">
-
-*De link kan ook worden gebruikt, tik deze over in een van de beschikbare internet browsers: https://app.florisoft.nl/apps/latest/hub/android/com.florisoft.hub-trusted.apk*
-
-</details>
+https://app.florisoft.nl/apps/latest/hub/android/com.florisoft.hub-signed.apk
 
 ## Android app installeren
-Nadat u de link heeft over getikt, of de QR-code heeft gescand, is er een app gedownload.
 
-|**Stap**|Uitleg|
-|-|-|
-|1| Navigeer naar de net gedownload app; 'Hub'<details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image22.png"></details>|
-|2| Open de app. U krijgt het volgende scherm te zien. Klik op het hamburger icoon rechtsboven. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image12.png"></details>|
-|3| Klik op 'Settings' in de instellingen. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image13.png" ></details>|
-|4| Voer de Cloud-server-URL in tekstvak 1 in.<br>Voor het tweede tekstvak moet je een releasekanaal selecteren. We hebben twee opties:<br><br>**1. latest**: Hiermee wordt de app-versie gebruikt die is gedownload met uw huidige hoofd backoffice-installatie.<br><br>**2. update**: Dit kanaal biedt u de app-versie die is gedownload met uw updateclient, zodat u nieuwe app-versies kunt testen die compatibel zijn met de nieuwere release op de updateclient.<br><br>In dit veld moet je "latest" of "update" invoeren. Over het algemeen wordt het nieuwste kanaal gebruikt.<br>Wat betreft het derde menu-item, selecteer de weergavetaal van de app. Sla vervolgens de wijzigingen op.  <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image14.png"></details>|
-|5| Hierna zal de app zich herstarten, klik hier op 'Ja'/'Yes'. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image15.png"></details>
-|6| Klik vervolgens op de 'Catalog'/'Catalogus' knop. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image16.png"></details>|
-|7| Log vervolgens in met uw Florisoft gebruiker (dit kan de Hub-app gebruiker, of elk ander FS systeemgebruiker die nog niet is ingelogd is).<details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image17.png" ></details>|
-|8| U komt op een scherm met een overzicht van de beschikbare apps. Om een app te downloaden, klik en houdvast, terwijl u naar links swiped. Er verschijnen twee iconen rechts van; de app downloaden (1) of verwijderen (2) <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image18.png"><img src="Media/Installatie Hub-App/image19.png"></details> |
-|9| Na het downloaden, kunt u het pijltje gebruiken om de app te openen. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image20.png"></details>|
-|10| De apps zijn ook te vinden op uw apparaat, uw kunt zoeken op de titel van de app zoals in de Hub-app beschreven staat.|
+Voer deze stappen uit op het Android-apparaat waarop u de Florisoft apps wilt gebruiken. Nadat de Hub-app is geinstalleerd, maakt u eerst verbinding met het hoofdsysteem. Daarna kunt u de beschikbare apps downloaden en openen.
 
-Hierna is de Hub-app geinstalleerd en kunnen de apps worden gedownload en gebruikt.
+1. **Download en open het installatiebestand**
 
-Het is belangrijk dat u de Hub-app ten alle tijden geinstalleerd houdt als u andere Florisoft apps gebruikt. Mocht er in de toekomst een nieuwe versie van een app beschikbaar komen, is de Hub App benodigd om deze te updaten.
+   Scan de QR-code met het Android-apparaat of open de downloadlink in een internetbrowser.
+
+2. **Sta de installatie toe**
+
+   Geeft Android een melding over installeren uit onbekende bronnen? Sta de installatie dan toe voor de browser of bestandsapp waarmee u het bestand heeft geopend. Ga daarna terug en rond de installatie af. Als de installatie is gelukt, staat de Hub-app tussen de apps op het apparaat.
+
+3. **Open de Hub-app en ga naar de instellingen**
+
+   Zodra de download is voltooid, opent u de Hub-app. Tik rechtsboven op het menu-icoon en tik daarna op **Settings**.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image12.png">
+   <img src="Media/Installatie Hub-App/image13.png">
+
+   </details>
+
+4. **Verbind de Hub-app met het hoofdsysteem**
+
+   Vul de volgende instellingen in:
+
+   - **Cloud-server-URL**: vul de URL van uw Florisoft omgeving in.
+   - **Releasekanaal**: vul meestal `latest` in. Gebruik `update` alleen wanneer Florisoft u vraagt om een update- of testversie te gebruiken.
+   - **Taal**: kies de gewenste weergavetaal van de app.
+
+   Sla de instellingen op. De app vraagt om opnieuw te starten. Tik op **Yes**.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image14.png">
+   <img src="Media/Installatie Hub-App/image15.png">
+
+   </details>
+
+5. **Open de catalogus en log in**
+
+   Tik na het herstarten op **Catalog**. Log daarna in met uw Florisoft gebruiker. Dit mag een speciale Hub-app gebruiker zijn, maar ook een andere Florisoft systeemgebruiker die nog niet in gebruik is.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image16.png">
+   <img src="Media/Installatie Hub-App/image17.png">
+
+   </details>
+
+6. **Download een app**
+
+   U ziet nu de apps die voor uw Florisoft omgeving beschikbaar zijn. Veeg een app naar links om de knoppen te tonen. Tik op het download-icoon om de app te downloaden. Het verwijder-icoon gebruikt u om een app te verwijderen.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image19.png">
+
+   </details>
+
+7. **Open of vind de gedownloade app**
+
+   Is de app gedownload? Tik dan op de pijl naast de app om deze vanuit de Hub-app te openen. U kunt de app ook openen via de app-lijst van het Android-apparaat. Zoek daar op de appnaam zoals die in de Hub-app wordt getoond.
+
+De Hub-app is nu klaar voor gebruik.
+
+Belangrijk: verwijder de Hub-app niet zolang u andere Florisoft apps gebruikt. De Hub-app is nodig om deze apps te beheren en bij te werken wanneer er nieuwe versies beschikbaar zijn.
 
 ## Windows app downloaden
-Voor de Windows desktop app kunt u de volgende downloadlink gebruiken:
+
+Voor de Windows desktop-app kunt u deze downloadlink gebruiken:
 
 https://app.florisoft.nl/apps/latest/hub/windows/hub.zip
 
 ## Windows app installeren
 
-Het installeren van de Windows Hub-app is optioneel, meestal wordt er gewerkt met de Android versie. U hoeft de Windows hub-app dus niet te installeren voor het beheren van uw apps.
-Nadat u op de link heeft geklikt, is er een .zip bestand gedownload.
+Installeer de Windows Hub-app wanneer u Florisoft apps op Windows wilt gebruiken of beheren. De beschikbare apps kunnen afwijken van de apps die op Android beschikbaar zijn.
 
-|**Stap**|Uitleg|
-|-|-|
-|1| Navigeer naar de map waar het .zip bestand is gedownload.|
-|2| Maak bijvoorbeeld op de C:\ schijf een folder FlorisoftApps aan. Met daarin de klantnaam folder, een hub folder en daarin een Bin folder. Bijvoorbeeld: C:\FlorisoftApps\ (Klantnaam) \Hub\bin <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image2.png"></details>|
-|3| Met uw rechtermuisknop, pak het bestand uit en plaats de bestanden in de bin folder, bijvoorbeeld in C:\FlorisoftApps\ (Klantnaam) \Hub\bin\. Belangrijk: De app files moeten altijd in een bin folder staan. Dat verwacht het update proces. Zorg er ook voor dat er geen spaties in de namen van de folders worden geplaatst.|
-|4| Binnen de map, staat een bestand genaamd 'Florisoft.Hub.Desktop'. Zet hiervan een snelkoppeling op het bureaublad.|
-|5| Open de app. U krijgt het volgende scherm te zien. Klik op het hamburger icoon rechtsboven. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image3.png"></details>|
-|6| Klik op 'Settings' in de instellingen. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image4.png" ></details>|
-|7| Voer de Cloud-server-URL in tekstvak 1 in.<br>Voor het tweede tekstvak moet je een releasekanaal selecteren. We hebben twee opties:<br><br>**1. latest**: Hiermee wordt de app-versie gebruikt die is gedownload met uw huidige hoofd backoffice-installatie.<br><br>**2. update**: Dit kanaal biedt u de app-versie die is gedownload met uw updateclient, zodat u nieuwe app-versies kunt testen die compatibel zijn met de nieuwere release op de updateclient.<br><br>In dit veld moet je "latest" of "update" invoeren. Over het algemeen wordt het nieuwste kanaal gebruikt.<br>Wat betreft het derde menu-item, selecteer de weergavetaal van de app. Sla vervolgens de wijzigingen op.  <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image5.png"></details>|
-|8| Hierna zal de app zich herstarten, klik hier op 'Ja'/'Yes'. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image6.png"></details>
-|9| Klik vervolgens op de 'Catalog'/'Catalogus' knop. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image7.png"></details>|
-|10| Log vervolgens in met uw Florisoft gebruiker (dit kan de Hub-app gebruiker, of elk ander FS systeemgebruiker die nog niet is ingelogd is).<details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image8.png" ></details>|
-|11| U komt op een scherm met een overzicht van de beschikbare apps. Om een app te downloaden, klik en houdvast met uw linke muisknop, terwijl u de muis naar links verplaatst. Er verschijnen twee iconen rechts van; de app downloaden (1) of verwijderen (2) <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image9.png"><img src="Media/Installatie Hub-App/image10.png"></details> |
-|12| Na het downloaden, kunt u het pijltje gebruiken om de app te openen. <details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image11.png"></details>|
-|13| De applicatie is ook te vinden binnen de verkenner. Op het pad C:\Gebruikers\UWGEBRUIKER\ kunt u de desbetreffende apps vinden, de map heeft dezelfde naam als de app die u gedownload heeft. Binnen deze map vindt u een toepassingsbestand. Hiervan kan u een snelkoppeling maken en op uw bureaublad voor gemakkelijke toegang.<details><summary>**Klik hier om de voorbeeld afbeelding te zien!**</summary><img src="Media/Installatie Hub-App/image23.png"></details>|
+Nadat u de downloadlink heeft geopend, wordt een `.zip`-bestand gedownload.
 
-Het is belangrijk dat u de Hub-app ten alle tijden geinstalleerd houdt als u andere Florisoft apps gebruikt. Mocht er in de toekomst een nieuwe versie van een app beschikbaar komen, is de Hub App benodigd om deze te updaten.
+1. **Open de downloadmap**
 
+   Ga naar de map waarin het `.zip`-bestand is gedownload.
+
+2. **Maak een vaste installatiemap**
+
+   Maak een vaste map voor de Hub-app. Bijvoorbeeld:
+
+   `C:\FlorisoftApps\<Klantnaam>\Hub\bin`
+
+   Gebruik geen spaties in de mapnamen.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image2.png">
+
+   </details>
+
+3. **Pak het bestand uit**
+
+   Pak het `.zip`-bestand uit in de `bin`-map. De bestanden moeten in een map met de naam `bin` staan, omdat het updateproces deze map verwacht. Plaats de bestanden niet in de downloadmap of in een tijdelijke map.
+
+4. **Maak een snelkoppeling**
+
+   Zoek in de `bin`-map het bestand **Florisoft.Hub.Desktop**. Maak hiervan een snelkoppeling op het bureaublad.
+
+5. **Open de Hub-app**
+
+   Open de Hub-app via de snelkoppeling. Klik rechtsboven op het menu-icoon.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image3.png">
+
+   </details>
+
+6. **Open de instellingen**
+
+   Klik op **Settings**.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image4.png">
+
+   </details>
+
+7. **Vul de instellingen in**
+
+   Vul de volgende instellingen in:
+
+   - **Cloud-server-URL**: vul de URL van uw Florisoft omgeving in.
+   - **Releasekanaal**: vul meestal `latest` in. Gebruik `update` alleen wanneer Florisoft u vraagt om een update- of testversie te gebruiken.
+   - **Taal**: kies de gewenste weergavetaal van de app.
+
+   Sla de instellingen daarna op.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image5.png">
+
+   </details>
+
+8. **Start de app opnieuw**
+
+   De app vraagt om opnieuw te starten. Klik op **Ja** of **Yes**.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image6.png">
+
+   </details>
+
+9. **Open de catalogus**
+
+   Klik na het herstarten op **Catalog** of **Catalogus**.
+
+   <details>
+   <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+   <img src="Media/Installatie Hub-App/image7.png">
+
+   </details>
+
+10. **Log in**
+
+    Log in met uw Florisoft gebruiker. Dit mag een speciale Hub-app gebruiker zijn, maar ook een andere Florisoft systeemgebruiker die nog niet in gebruik is.
+
+    <details>
+    <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+    <img src="Media/Installatie Hub-App/image8.png">
+
+    </details>
+
+11. **Download een app**
+
+    U ziet nu de apps die voor uw Florisoft omgeving beschikbaar zijn. Houd de linkermuisknop ingedrukt op een app en sleep deze naar links. Klik daarna op het download-icoon om de app te downloaden. Het verwijder-icoon gebruikt u om een app te verwijderen.
+
+    <details>
+    <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+    <img src="Media/Installatie Hub-App/image9.png">
+    <img src="Media/Installatie Hub-App/image10.png">
+
+    </details>
+
+12. **Open de gedownloade app**
+
+    Is de app gedownload? Klik dan op de pijl naast de app om deze te openen.
+
+    <details>
+    <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+    <img src="Media/Installatie Hub-App/image11.png">
+
+    </details>
+
+13. **Vind de app in Windows**
+
+    Gedownloade Windows apps zijn ook terug te vinden in de gebruikersmap van Windows, bijvoorbeeld onder `C:\Users\<uw_gebruiker>\`. De mapnaam komt overeen met de appnaam. In deze map staat het uitvoerbare bestand van de app. Maak hiervan eventueel een snelkoppeling op het bureaublad.
+
+    <details>
+    <summary><b>Voorbeeldafbeelding tonen</b></summary>
+
+    <img src="Media/Installatie Hub-App/image23.png">
+
+    </details>
+
+Belangrijk: verwijder de Hub-app niet zolang u andere Florisoft apps gebruikt. De Hub-app is nodig om deze apps te beheren en bij te werken wanneer er nieuwe versies beschikbaar zijn.
+
+## Veelvoorkomende vragen
+
+### De QR-code werkt niet
+
+Open de Android-downloadlink handmatig in een internetbrowser op het Android-apparaat.
+
+### Android blokkeert de installatie
+
+Sta installatie uit deze bron toe voor de browser of bestandsapp waarmee u het APK-bestand opent. Dit is nodig omdat de Hub-app buiten de Google Play Store wordt geinstalleerd.
+
+### Ik weet niet welk releasekanaal ik moet gebruiken
+
+Gebruik `latest`, tenzij Florisoft u heeft gevraagd om `update` te gebruiken.
+
+### Waarom is een app uitgegrijsd?
+
+Als een app in de Hub-app is uitgegrijsd, is deze niet beschikbaar voor het platform waarop u de Hub-app gebruikt. Ziet u dit op Android, dan is de app alleen beschikbaar voor Windows. Ziet u dit op Windows, dan is de app alleen beschikbaar voor Android.
+
+### Ik zie geen apps in de catalogus
+
+Controleer de Cloud-server-URL, het releasekanaal en de gebruikte Florisoft gebruiker. Neem contact op met Florisoft als de instellingen kloppen maar de catalogus leeg blijft.
