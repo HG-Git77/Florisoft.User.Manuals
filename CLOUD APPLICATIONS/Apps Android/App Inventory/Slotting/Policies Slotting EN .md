@@ -131,6 +131,17 @@ When this policy is enabled, an additional button is added to the hamburger menu
 
 ---
 
+### `AllowCreateLocation`
+
+Determines whether the user is allowed to create new parcel locations from the Slotting app.
+When this policy is enabled, the **Create location** action is shown in the hamburger menu. This action lets the user enter a location code and location name. The location code can also be filled by scanning a location barcode.
+
+The location is stored in the **Parcel Locations** table (`PARTIJLOC`). The location code and location name are mandatory. The location code is always stored in uppercase. If the location code already exists, no duplicate location is created and the user receives an error message.
+
+Use this policy together with `CheckPredefinedLocationCodes` when users may only use predefined locations, but authorized users must be able to add new locations directly from the app.
+
+---
+
 ### `LocationDisplayType`  
 Determines how the location is displayed in the app.  
 

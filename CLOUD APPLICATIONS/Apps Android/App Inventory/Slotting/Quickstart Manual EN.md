@@ -52,6 +52,18 @@ These workflows are detailed in the following steps.
 
 Use your scanner to scan a location barcode. Alternatively, swipe right on the screen to enter a barcode manually.
 
+If the location does not yet exist and you are authorized to create it, you can add a new location from the hamburger menu. This option is only visible when the `AllowCreateLocation` policy is enabled for your user.
+
+| Step  | Description |
+| ----- | ----------- |
+| **1** | Open the hamburger menu on the Slotting scan screen. |
+| **2** | Select **Create location**. |
+| **3** | Enter the **Location code** or scan the location barcode. |
+| **4** | Enter the **Location name** or description. |
+| **5** | Save the location. The location code is automatically stored in uppercase. |
+
+The location code and location name are mandatory. If the location code already exists, the location is not created again and an error message is shown. After a successful save, you return to the scan screen and the new location is immediately available for the existing location validation.
+
 ##### Step 4.a: Link parcels to this location
 
 Scan the barcodes of the parcels you want to assign to this location. They will be grouped under this location.
@@ -111,7 +123,7 @@ Click the print template, enter the desired quantity, and click **Print**. You c
 
 ## Version Control & Development Phase
 
-> **Last updated:** August 27, 2025  
+> **Last updated:** May 15, 2026  
 > **Current development phase:** Dev phase 1 completed
 
 This manual is based on the current Inventory App and is periodically updated when new features are added or policies change.

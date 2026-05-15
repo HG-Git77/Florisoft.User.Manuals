@@ -133,6 +133,17 @@ Wanneer deze policy is ingeschakeld, wordt er in het hamburger-menu een extra kn
 
 ---
 
+### `AllowCreateLocation`
+
+Bepaalt of de gebruiker via de Slotting-app nieuwe partijlocaties mag aanmaken.
+Wanneer deze policy is ingeschakeld, wordt in het hamburger-menu de actie **Locatie aanmaken** getoond. Via deze actie kan de gebruiker een locatiecode en locatienaam invoeren. De locatiecode kan ook worden gevuld door een locatiebarcode te scannen.
+
+De locatie wordt opgeslagen in de **Partij Locatie**-tabel (`PARTIJLOC`). De locatiecode en locatienaam zijn verplicht. De locatiecode wordt altijd in hoofdletters opgeslagen. Als de locatiecode al bestaat, wordt er geen dubbele locatie aangemaakt en krijgt de gebruiker een foutmelding.
+
+Gebruik deze policy in combinatie met `CheckPredefinedLocationCodes` wanneer gebruikers alleen vooraf geregistreerde locaties mogen gebruiken, maar geautoriseerde gebruikers wel direct vanuit de app nieuwe locaties moeten kunnen toevoegen.
+
+---
+
 ### `LocationDisplayType`  
 Bepaalt hoe de locatie wordt weergegeven in de app.  
 

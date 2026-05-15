@@ -53,6 +53,18 @@ Deze workflows worden in de volgende stappen uitgewerkt.
 
 Gebruik uw scanner om een locatiebarcode te scannen. U kunt ook naar rechts vegen in het scherm om handmatig een barcode in te voeren.
 
+Wanneer de locatie nog niet bestaat en u hiervoor geautoriseerd bent, kunt u vanuit het hamburger-menu een nieuwe locatie aanmaken. Deze optie is alleen zichtbaar wanneer de policy `AllowCreateLocation` is ingeschakeld voor uw gebruiker.
+
+| Stap  | Uitleg |
+| ----- | ------ |
+| **1** | Open het hamburger-menu op het Slotting-scanscherm. |
+| **2** | Kies **Locatie aanmaken**. |
+| **3** | Vul de **Locatiecode** in of scan de locatiebarcode. |
+| **4** | Vul de **Locatienaam** of omschrijving in. |
+| **5** | Sla de locatie op. De locatiecode wordt automatisch in hoofdletters opgeslagen. |
+
+De locatiecode en locatienaam zijn verplicht. Wanneer de locatiecode al bestaat, wordt de locatie niet opnieuw aangemaakt en krijgt u een foutmelding. Na succesvol opslaan keert u terug naar het scanscherm en is de nieuwe locatie direct beschikbaar voor de bestaande locatiecontrole.
+
 ##### Stap 4.a: Partijen koppelen aan deze locatie
 
 Scan de barcodes van de partijen die u aan deze locatie wilt toewijzen. Ze worden onder deze locatie gegroepeerd.
@@ -113,7 +125,7 @@ Klik op het printsjabloon, geef het gewenste aantal labels op en klik op **Print
 
 ## Versiebeheer & Ontwikkelfase
 
-> **Laatste update:** 27 augustus 2025  
+> **Laatste update:** 15 mei 2026  
 > **Huidige ontwikkelfase:** Dev phase 1 afgerond
 
 Deze handleiding is gebaseerd op de actuele Inventory App en wordt periodiek bijgewerkt bij nieuwe functionaliteit of gewijzigde policies.
